@@ -1,0 +1,24 @@
+function vowelsAndConsonants(s) { //s = sample input
+   let arrays = s.split(""); 
+    let sesli = [];
+    let sessiz = [];
+    for (let i = 0;i < arrays.length ; i++) 
+    {
+        
+        if(arrays[i]=='a'||arrays[i]=='e'||arrays[i]=='i'||arrays[i]=='o'||arrays[i]=='u'){
+            sesli.push(arrays[i]);
+            
+        }else{
+            sessiz.push(arrays[i]);
+        }
+    }
+    for(let i = 0; i< sesli.length;i++){
+        console.log(sesli[i])
+        
+    }
+    for(let i = 0; i< sessiz.length;i++){
+        console.log(sessiz[i])
+        
+    }
+
+}
